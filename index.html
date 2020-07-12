@@ -334,57 +334,61 @@
     </main>
 
 <footer class="footer">
-  <div class="container">
-    <!-- Footer -->
-    <div class="footer-address">
-      <a class="logo link" href="index.html">
-        <span class="web">Web</span>
-        <span class="stud">Studio</span>
-      </a>
-      <address class="address">
-        <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
-        <ul class="list credits">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-    <div class="social-network-block">
-      <!-- Our Social Networks -->
-
-      <h2 class="text">присоединяйтесь</h2>
-      <ul class="list social-network">
-        <!-- Social network List -->
-        <li class="item">
-          <a class="social-link link" href="http://instagram.com/" aria-label="Instagram"><img class="image"
-              src="images/Social/instagrammf.svg" alt="Instagram" width="20px" height="20px"></a>
-        </li>
-        <li class="item">
-          <a class="link social-link" href="https://twitter.com/" aria-label="Twitter"><img class="image"
-              src="images/Social/twitterf.svg" alt="Twitter" width="20px" height="17px"></a></a>
-        </li>
-        <li class="item">
-          <a class="link social-link" href="https://www.facebook.com/" aria-label="Facebook"><img class="image"
-              src="images/Social/facebookf.svg" alt="Facebook" width="20px" height="20px"></a></a>
-        <li class="item">
-          <a class="link social-link" href="https://www.linkedin.com/" aria-label="LinkedIn"><img class="image"
-              src="images/Social/linkedinf.svg" alt="LinkedIn" width="20px" height="20px"></a></a>
-        </li>
-    </div>
-    <div class="subscribe-block">
-      <h2 class="text subscribe">Подпишитесь на рассылку</h2>
-      <a class="link" href=""><p class="subscribe-button button">Подписаться</p></a>
-        <!-- Тут будет форма подписки - когда научусь! =))) -->
-    </div>
-
-  </div>
-</footer>
+      <div class="container">
+        <!-- Footer -->
+        <div class="footer-address">
+          <a class="logo link" href="index.html">
+            <span class="web">Web</span>
+            <span class="stud">Studio</span>
+          </a>
+          <address class="address">
+            <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
+            <ul class="list credits">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-network-block">
+          <!-- Our Social Networks -->
+    
+          <h2 class="text">присоединяйтесь</h2>
+          <ul class="list social-network">
+            <!-- Social network List -->
+            <li class="item">
+              <a class="social-link link" href="http://instagram.com/" aria-label="Instagram"><img class="image"
+                  src="images/Social/instagrammf.svg" alt="Instagram" width="20px" height="20px"></a>
+            </li>
+            <li class="item">
+              <a class="link social-link" href="https://twitter.com/" aria-label="Twitter"><img class="image"
+                  src="images/Social/twitterf.svg" alt="Twitter" width="20px" height="17px"></a></a>
+            </li>
+            <li class="item">
+              <a class="link social-link" href="https://www.facebook.com/" aria-label="Facebook"><img class="image"
+                  src="images/Social/facebookf.svg" alt="Facebook" width="20px" height="20px"></a></a>
+            <li class="item">
+              <a class="link social-link" href="https://www.linkedin.com/" aria-label="LinkedIn"><img class="image"
+                  src="images/Social/linkedinf.svg" alt="LinkedIn" width="20px" height="20px"></a></a>
+            </li>
+        </div>
+        <div class="subscribe-block">
+          <h2 class="text subscribe">Подпишитесь на рассылку</h2>
+          <a class="link" href="">
+            <p class="subscribe-button button">Подписаться</p>
+          </a>
+          <!-- Тут будет форма подписки - когда научусь! =))) -->
+        </div>
+    
+      </div>
+    </footer>
 
 <form class="form" action="">
+  <button class="button" type="close">Отправить</button>
+<p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
 
 <label class="label" for="name">Имя </label>
 
@@ -410,12 +414,23 @@
 <div class="form-field">
   <img class="image" src="../images/form-email.svg" width="12px" height="12px" alt="">
      <input type="email" name="mail" id="mail" placeholder="moric@mail.com" />
-         
-  </div>
-        </div>
-<input type="checkbox" name="accept-offer" value="accept-offer" id="accept-offer" />
+</div>
+ <label class="label" for="comment">Комментарий</label>
+<div class="form-field textarea">
+      <textarea
+          class="comment"
+          name="comment"
+          id="comment"
+          rows="5"
+          placeholder="Типа какие-то детали"
+        >
+      </textarea>
+      </div>
+<div> <input type="checkbox" name="accept-offer" value="accept-offer" id="accept-offer" />
             <label for="accept-offer">Соглашаюсь с рассылкой и принимаю <a class="link accent" href=""> Условия договора</a></label>
 <button class="button" type="submit">Отправить</button>
+</div>
+
     </form>
 
 <script>
