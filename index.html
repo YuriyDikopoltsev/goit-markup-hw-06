@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
-    
-    <header class="header">
+      <header class="header">
       <div class="container nav">
         <!-- Logo -->
           <a class="logo link" href="index.html">
@@ -281,8 +280,7 @@
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="list client-list">
           <li class="item">
-            
-              <a class="link" href="">
+             <a class="link" href="">
               <div class="client-link">
               <svg class="client-icon" width="45px" height="50px">
                 <use href="./images/sprite.svg#ClientLogo1"></use>
@@ -385,13 +383,63 @@
 
   </div>
 </footer>
+
+<form class="form" action="">
+
+<label class="label" for="name">Имя </label>
+
+<div class="form-field">
+  <img class="image" src="../images/form-person.svg" width="12px" height="12px" alt="">
+     <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Эннио Морикконэ"
+        />   
+  </div>
+
+  <label class="label" for="tel">Телефон</label>
+
+<div class="form-field">
+  <img class="image" src="../images/form-phone.svg" width="12px" height="12px" alt="">
+     <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />   
+  </div>
+
+<label class="label" for="mail">Почта</label>
+
+<div class="form-field">
+  <img class="image" src="../images/form-email.svg" width="12px" height="12px" alt="">
+     <input type="email" name="mail" id="mail" placeholder="moric@mail.com" />
+         
+  </div>
+        </div>
+<input type="checkbox" name="accept-offer" value="accept-offer" id="accept-offer" />
+            <label for="accept-offer">Соглашаюсь с рассылкой и принимаю <a class="link accent" href=""> Условия договора</a></label>
+<button class="button" type="submit">Отправить</button>
+    </form>
+
 <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".page-header")
         .getBoundingClientRect();
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>
+</script>
+<script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+ </script>
 </body>
 
 </html>

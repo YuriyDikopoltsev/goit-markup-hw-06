@@ -115,6 +115,10 @@ html {
   font-style: normal;
   z-index: 1;
 }
+.accent {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 /** HEADER **/
 /* LOGO */
 .logo {
@@ -447,10 +451,17 @@ html {
 .client {
   padding-bottom: 94px;
 }
-.client .link:hover,
-.client .link:focus {
-  outline: none;
-  color: var(--accent-color);
+.client-list .link :hover,
+.client-list .link:focus {
+  border-color: var(--accent-color);
+}
+.client-list .client-link :hover,
+.client-list .client-link:focus {
+  border-color: var(--accent-color);
+}
+.client .link:hover .client-icon,
+.client .link:focus .client-icon {
+  fill: var(--accent-color);
 }
 .client .title {
   margin-bottom: 50px;
@@ -461,11 +472,6 @@ html {
 }
 .client-list .item:not(:last-child) {
   margin-right: 30px;
-}
-.client-list .item :hover,
-.client-list .item:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 .client-link .link {
   display: flex;
@@ -557,6 +563,68 @@ html {
   margin-left: 11px;
   background-size: contain;
   background-image: url(../images/send.svg);
+}
+/* FORM */
+textarea {
+  resize: none;
+}
+
+.form {
+  display: block;
+  width: 528px;
+  height: 581px;
+  left: 536px;
+  top: 221px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-field {
+  justify-content: left;
+  align-items: center;
+  padding-left: 19px;
+  display: flex;
+  margin-bottom: 30px;
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.label {
+  display: inline-block;
+  padding-bottom: 4px;
+  padding-left: 16px;
+}
+.form-field label {
+  margin-bottom: 28px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+.form-field input {
+  margin: 0;
+  padding: 11px 20px;
+  border: none;
+}
+
+.form-field input::placeholder {
+  color: #2a2a2a;
+}
+.form .button {
+  margin-left: 124px;
+  margin-right: 124px;
 }
 /** PORTFOLIO **/
 
