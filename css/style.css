@@ -564,6 +564,24 @@ html {
   background-size: contain;
   background-image: url(../images/send.svg);
 }
+.subscribe-email {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--fotter-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* FORM */
 textarea {
   resize: none;
@@ -582,8 +600,6 @@ textarea {
   border-radius: 4px;
   outline: 1px solid tomato;
   padding: 40px;
-  padding-left: auto;
-  padding-right: auto;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -592,7 +608,13 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
 }
-
+.close .close-button {
+  display: flex;
+  padding: 9px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
 .form-field {
   justify-content: left;
   align-items: center;

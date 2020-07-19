@@ -53,7 +53,7 @@
         <div class="container">
         <!-- Section Hero -->
         <h1 class="hero-title">
-          Эффективные решения для вашего бизнеса
+          Эффективные решения для вашего бизнеса.
         </h1>
         <button class="button">Заказать услугу</button>
         </div>
@@ -375,19 +375,35 @@
                   src="images/Social/linkedinf.svg" alt="LinkedIn" width="20px" height="20px"></a></a>
             </li>
         </div>
-        <div class="subscribe-block">
+
+         <div class="subscribe-block">
           <h2 class="text subscribe">Подпишитесь на рассылку</h2>
-          <a class="link" href="">
-            <p class="subscribe-button button">Подписаться</p>
-          </a>
-          <!-- Тут будет форма подписки - когда научусь! =))) -->
-        </div>
-    
-      </div>
+          <form>
+           <div class="newsletter-container">
+             <input type="email" name="mail" class="subscribe-email" id="mail" placeholder="E-mail" />
+                    <button type="submit" class="newsletter-button button link">Подписаться</button>
+          </div>
+        </form> 
+     </div>
     </footer>
 
+
+
+
+
+
+    
 <form class="form" action="">
-  <button class="button" type="close">Отправить</button>
+
+  <span class="close">
+  <button class="close-button" type="close">
+    <svg class="form-cancel" width="11px" height="11px" fill="black">
+    <use href="./images/sprite.svg#form-cancel"></use>
+  </svg>
+  </button>
+</span>
+
+
 <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
 
 
