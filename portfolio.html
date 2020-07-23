@@ -269,15 +269,16 @@
                   src="images/Social/linkedinf.svg" alt="LinkedIn" width="20px" height="20px"></a></a>
             </li>
         </div>
-        <div class="subscribe-block">
+
+         <div class="subscribe-block">
           <h2 class="text subscribe">Подпишитесь на рассылку</h2>
-          <a class="link" href="">
-            <p class="subscribe-button button">Подписаться</p>
-          </a>
-          <!-- Тут будет форма подписки - когда научусь! =))) -->
-        </div>
-    
-      </div>
+          <form>
+           <div class="newsletter-container">
+             <input type="email" name="mail" class="subscribe-email" id="mail" placeholder="E-mail" />
+                    <button type="submit" class="newsletter-button button link">Подписаться</button>
+          </div>
+        </form> 
+     </div>
     </footer>
     <script>
       const { height: pageHeaderHeight } = document
