@@ -46,6 +46,78 @@
       </div>
     </header>
 
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <form class="form" action="">
+
+  
+  <button class="close-button" type="close" data-modal-close>
+    <svg class="form-icon" width="11px" height="11px">
+   <use href="./images/sprite.svg#form-close"></use>
+  </svg>
+  </button>
+
+
+<p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
+
+<ul class="list form-list">
+
+<li class="form-field">
+  <input class="form-input class="form-input""
+          type="text"
+          name="Name"
+          id="Name"
+           placeholder=" "
+        />   
+<label class="label" for="name">Имя </label>
+  <svg class="form-icon" width="12px" height="12px">
+   <use href="./images/sprite.svg#form-person"></use>
+  </svg>
+     
+  </li>
+
+  
+
+<li class="form-field item">
+  <input class="form-input" type="tel" class="form-field" name="tel" id="tel" placeholder=" " />
+  <label class="label" for="tel">Телефон</label>
+  <svg class="form-icon" width="13px" height="13px">
+   <use href="./images/sprite.svg#form-phone"></use>
+  </svg>
+  
+      
+  </li>
+
+
+<li class="form-field">
+     <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
+  <label class="label" for="mail">Почта</label>
+  <svg class="form-icon" width="12px" height="15px">
+   <use href="./images/sprite.svg#form-mail"></use>
+  </svg>
+  
+</li>
+</ul>
+ 
+<div class="form-field textarea">
+    <textarea placeholder=" " class="comment" name="comment" id="comment" rows="8"></textarea>
+      <label class="comment-label" for="comment">Комментарий</label>
+      </div>
+     
+
+<div class="accept-offer"> <input type="checkbox" name="accept-offer" value="accept-offer" id="accept-offer" />
+            <label for="accept-offer">Соглашаюсь с рассылкой и принимаю <a class="link accent" href=""> Условия договора</a></label>
+
+</div>
+<button class="button" type="submit">Отправить</button>
+
+    </form>
+      </div>
+    </div>
+
+
+
+
     <main class="main">
       <!-- Unique content -->
 
@@ -55,7 +127,7 @@
         <h1 class="hero-title">
           Эффективные решения для вашего бизнеса.
         </h1>
-        <button class="button">Заказать услугу</button>
+        <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -387,70 +459,6 @@
      </div>
     </footer>
 
-
-
-
-
-
-    
-<form class="form" action="">
-
-  <span class="close">
-  <button class="close-button" type="close">
-    <svg class="form-cancel" width="11px" height="11px" fill="black">
-    <use href="./images/sprite.svg#form-cancel"></use>
-  </svg>
-  </button>
-</span>
-
-
-<p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
-
-
-<div class="form-field">
-  
-<label class="label" for="name">Имя </label>
-  <img class="image" src="../images/form-person.svg" width="12px" height="12px" alt="">
-     <input
-          type="text"
-          name="Name"
-          id="Name"
-        />   
-  </div>
-
-  
-
-<div class="form-field">
-  <label class="label" for="tel">Телефон</label>
-  <img class="image" src="../images/form-phone.svg" width="12px" height="12px" alt="">
-     <input type="tel" name="tel" id="tel"/>   
-  </div>
-
-
-
-<div class="form-field">
-  <label class="label" for="mail">Почта</label>
-  <img class="image" src="../images/form-email.svg" width="12px" height="12px" alt="">
-     <input type="email" name="mail" id="mail"/>
-</div>
- <label class="label" for="comment">Комментарий</label>
-<div class="form-field textarea">
-      <textarea
-          class="comment"
-          name="comment"
-          id="comment"
-          rows="5"
-          placeholder="Типа какие-то детали"
-        >
-      </textarea>
-      </div>
-<div> <input type="checkbox" name="accept-offer" value="accept-offer" id="accept-offer" />
-            <label for="accept-offer">Соглашаюсь с рассылкой и принимаю <a class="link accent" href=""> Условия договора</a></label>
-<button class="button" type="submit">Отправить</button>
-</div>
-
-    </form>
-
 <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".page-header")
@@ -458,21 +466,7 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
 </script>
-<script>
-      (() => {
-        document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
- </script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
